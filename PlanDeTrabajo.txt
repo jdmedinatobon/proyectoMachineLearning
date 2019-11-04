@@ -1,8 +1,11 @@
 1) Prioridad: Preprocesamiento
 Implica:
 Nota: Mirar si toca remover el tejido no cerebral antes de todo el proceso (Usar una herramienta como BET de Oxford).
-a) Leer y organizar los datos en una matriz de (64,64,30,1800/2700)
+a) Leer y organizar los datos en una matriz de (64,64,30,1800/2700) 
 b) Con los datos de a) sacar los features (Número tentativo: 21 features).
+Para sacar los features del GLCM se esta usando la libreria de mahotas. Tiene un problema y es que totea el uso de RAM de Google Colab y
+termina la ejecucion del codigo. Para esto lo que hicimos fue reducir la escala de las imagenes, es decir, si utiliza una escala de grises de 65536 la reducimos hasta valores entre 16384 o 256. Entre mas bajo menos se demora, pero menor es la informacion de la imagen. Pendiente hablarlo con Fernando o buscar en internet sobre esto.
+
 c) Con los datos preprocesados en features realizar nuevamente un preprocesamiento utilizando Blanqueamiento, estandarización, normalización, PCA, etc.
 d) Vectorizar los datos preprocesados en un vector de (21/lo que sea, 1800/2700). Fin de preprocesamiento (O no?).
 
