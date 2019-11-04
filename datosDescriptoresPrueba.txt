@@ -1,6 +1,6 @@
 Este archivo incluye los descriptores calculados a partir de los datos preprocesados. 
 Los datos brutos fueron obtenidos del dataset de imágenes de resonancia magnética funcional que se puede encontrar en https://openneuro.org/datasets/ds001497/versions/1.0.1.
-A estos datos se les realizó un preprocesamiento utilizando fmriprep (ESTO TOCA VER SI SI SIRVE AL FIN) y finalmente se calcularon los descriptores.
+A estos datos se les realizó un preprocesamiento utilizando fmriprep (ESTO TOCA VER SI SI SIRVE AL FIN) y finalmente se calcularon los descriptores con una escala de grises de 256.
 Estos descriptores son (EL NUMERO QUE SEA) e incluyen:
 Energía, etc.... (AGREGAR LOS QUE FALTAN Y ORDENARLOS CORRECTAMENTE).
 Finalmente, cada muestra incluye a la clase a la cual pertenece. Existen 3 clases y se indican con un número de 0 a 2 que corresponden a:
